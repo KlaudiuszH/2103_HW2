@@ -6,7 +6,7 @@ import java.util.List;
 @Entity
 public class Department {
     @Id
-    @GeneratedValue
+    @GeneratedValue     
     private int id;
 
     private String title;
