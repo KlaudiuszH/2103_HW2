@@ -10,5 +10,5 @@ public interface DepartmentRepository extends CrudRepository<Department, Integer
 
     public Department findByTitle(String title);
 
-    public Department findByFoundationModule (Module foundationModule);
+    public Department findByFoundationModuleCode (String code);
 }
