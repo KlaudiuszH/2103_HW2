@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface CourseworkRepository extends CrudRepository<Coursework, Integer> {
 
-    public Coursework FindByWeighting(Integer weighting);
+    public Coursework findByWeighting(Integer weighting);
 }
