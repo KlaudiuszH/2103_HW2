@@ -31,7 +31,6 @@ public class Hw2Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
         Department depInf = new Department();
         depInf.setTitle("Informatics");
         depInf = repoD.save(depInf);
@@ -51,6 +50,5 @@ public class Hw2Application implements CommandLineRunner {
         m1.getCoursework().add(c1);
         m1.setExam(c1);
         m1 = repoM.save(m1);
-
     }
 }

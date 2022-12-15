@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface CourseworkRepository extends CrudRepository<Coursework, Integer> {
 
-    public List<Coursework> FindByWeighting(Integer weighting);
+    public List<Coursework> findCourseworkByWeighting(Integer weighting);
 }
