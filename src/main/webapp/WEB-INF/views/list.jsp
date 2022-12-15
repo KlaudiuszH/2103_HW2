@@ -13,7 +13,7 @@
     </tr>
     <c:forEach items="${departments}" var="department">
         <tr>
-            <td>${departments.getTitle()}</td>
+            <td>${department.toString()}</td>
         </tr>
     </c:forEach>
 </table>

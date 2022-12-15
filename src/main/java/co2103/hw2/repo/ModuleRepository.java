@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface ModuleRepository extends CrudRepository<Module, String> {
 
-    public List<Module> findModuleByCode(String code);
+    public Module findModuleByCode(String code);
 }
