@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<h2>List of departments</h2>
 <table>
     <tr>
         <th>Departments</th>

@@ -10,7 +10,7 @@ public class Department {
     private int id;
 
     private String title;
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @ManyToMany(cascade = {CascadeType.PERSIST})
     private List<Module> modules = new ArrayList<>();
     @ManyToOne
     private Module foundationModule;

@@ -9,7 +9,7 @@ public class Module {
     private String code;
     @ManyToMany(mappedBy = "modules")
     private List<Department> departments;
-    @OneToMany(cascade = {CascadeType.MERGE}, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(cascade = {CascadeType.REMOVE}, fetch = FetchType.EAGER)
     @JoinColumn
     private List<Coursework> courseworks = new ArrayList<>();
     @OneToOne

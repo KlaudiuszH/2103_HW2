@@ -28,6 +28,7 @@ public class DeleteController {
     }
     @RequestMapping("/deleteModule")
     public String deleteModule(@RequestParam String code) {
+        //should be a nested loop to delete constraints
         if (repoM.findModuleByCode(code).isPresent()) {
             repoM.delete(repoM.findById(code).get());
         }
@@ -35,6 +36,7 @@ public class DeleteController {
     }
     @RequestMapping("/deleteCoursework")
     public String deleteCoursework(@RequestParam int id) {
+        //should be a nested loop to delete constraints
         if (repoC.findById(id).isPresent()) {
             repoC.delete(repoC.findById(id).get());
         }
